@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Drop Challenge - charity: water</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen">
+            <div class="logo">
+                <img src="img/cw_logo_horizontal.png" alt="charity: water" class="cw-logo">
+                <h1>💧 Water Drop Challenge</h1>
+                <p class="subtitle">Help bring clean water to communities in need</p>
+            </div>
+            <div class="instructions">
+                <h3>How to Play:</h3>
+                <ul>
+                    <li>💧 Tap blue water drops to collect them</li>
+                    <li>🚫 Avoid red pollutant drops</li>
+                    <li>⏰ Collect as many as possible before time runs out</li>
+                </ul>
+            </div>
+            <button id="start-btn" class="btn primary">Start Game</button>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="screen hidden">
+            <div class="game-header">
+                <div class="header-logo">
+                    <img src="img/cw_logo.png" alt="charity: water" class="game-logo">
+                </div>
+                <div class="score-timer-container">
+                    <div class="score-container">
+                        <span class="label">Score:</span>
+                        <span id="score">0</span>
+                    </div>
+                    <div class="timer-container">
+                        <span class="label">Time:</span>
+                        <span id="timer">60</span>s
+                    </div>
+                </div>
+            </div>
+            
+            <div id="game-area">
+                <!-- Drops will be dynamically added here -->
+            </div>
+            
+            <div class="feedback-container">
+                <div id="feedback-message"></div>
+            </div>
+        </div>
+
+        <!-- End Screen -->
+        <div id="end-screen" class="screen hidden">
+            <div class="result-container">
+                <img src="img/cw_logo_horizontal.png" alt="charity: water" class="cw-logo">
+                <h2>Game Over!</h2>
+                <div class="final-score">
+                    <span>Your Final Score:</span>
+                    <span id="final-score">0</span>
+                </div>
+                <div class="impact-message">
+                    <p>🌍 Want to help bring clean water to others?</p>
+                    <p>Every drop counts in the fight for clean water access.</p>
+                    <p class="stats-text">771 million people lack access to clean water. Together, we can change that.</p>
+                </div>
+                <div class="action-buttons">
+                    <button id="play-again-btn" class="btn primary">Play Again</button>
+                    <a href="https://www.charitywater.org/donate" target="_blank" class="btn secondary">Donate Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer with charity: water links -->
+    <footer class="charity-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="img/cw_logo_horizontal.png" alt="charity: water" class="footer-cw-logo">
+            </div>
+            <div class="footer-links">
+                <a href="https://www.charitywater.org" target="_blank">Learn More</a>
+                <a href="https://www.charitywater.org/donate" target="_blank">Donate</a>
+                <a href="https://www.charitywater.org/projects" target="_blank">Projects</a>
+                <a href="https://www.charitywater.org/about" target="_blank">About</a>
+            </div>
+            <p class="footer-text">100% of public donations directly fund clean water projects</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
